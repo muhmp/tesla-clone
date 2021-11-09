@@ -8,15 +8,21 @@ function Section() {
                 <h1>Model S</h1>
                 <p>Order Online for Touchless Delivery</p>
             </ItemText>
-            <ButtonGroup>
-                <LeftButton>
-                    Custom Order
-                </LeftButton>
-                <RightButton>
-                    Existing Inventory
-                </RightButton>
-            </ButtonGroup>
-            <DownArrow src="/images/down-arrow.svg"></DownArrow>
+            <Buttons> {/**adding component */}
+
+                <ButtonGroup>
+                    <LeftButton>
+                        Custom Order
+                    </LeftButton>
+
+                    <RightButton>
+                        Existing Inventory
+                    </RightButton>
+
+                </ButtonGroup>
+                <DownArrow src="/images/down-arrow.svg" />
+            </Buttons>
+
         </Wrap>
     )
 }
@@ -35,8 +41,8 @@ const Wrap = styled.div `
     background-image: url('/images/model-3.jpg');
     display:flex;
     flex-direction: column;
-    justify-content: between; //vertical alignment
-    align-items: center; //horizontal alignmnent
+    justify-content: space-between; //vertical
+    align-items: center; //horizontal
 `
 
 /** Styling */
@@ -46,7 +52,7 @@ const ItemText = styled.div `
 `
 
 const ButtonGroup = styled.div `
-
+    display:flex;
 `
 
 const LeftButton = styled.div `
@@ -58,10 +64,11 @@ const LeftButton = styled.div `
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    opacity: 0.8;
+    opacity: 0.85;
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
+    margin:10px;
 
 `
 
@@ -72,5 +79,9 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img `
     margin-top: 20px;
     height:40px;
+    animation: animateDown infinite 1.5s;
+    overflow-x:hidden;
+`
 
+const Buttons = styled.div `
 `
