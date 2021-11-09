@@ -16,6 +16,7 @@ function Section() {
                     Existing Inventory
                 </RightButton>
             </ButtonGroup>
+            <DownArrow src="/images/down-arrow.svg"></DownArrow>
         </Wrap>
     )
 }
@@ -32,6 +33,10 @@ const Wrap = styled.div `
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/model-3.jpg');
+    display:flex;
+    flex-direction: column;
+    justify-content: between; //vertical alignment
+    align-items: center; //horizontal alignmnent
 `
 
 /** Styling */
@@ -54,8 +59,18 @@ const LeftButton = styled.div `
     align-items: center;
     border-radius: 100px;
     opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+
 `
 
 const RightButton = styled(LeftButton)`
+
+`
+
+const DownArrow = styled.img `
+    margin-top: 20px;
+    height:40px;
 
 `
