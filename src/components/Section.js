@@ -47,12 +47,16 @@ const Wrap = styled.div `
 
 /** Styling */
 const ItemText = styled.div `
-    padding-top = 15vh;
-    text-align = center;
+    padding-top : 15vh;
+    text-align : center;
 `
 
+/**define the group button */
 const ButtonGroup = styled.div `
     display:flex;
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
 `
 
 const LeftButton = styled.div `
@@ -73,7 +77,9 @@ const LeftButton = styled.div `
 `
 
 const RightButton = styled(LeftButton)`
-
+    background-color: white;
+    opacity: 0.65;
+    color: black;
 `
 
 const DownArrow = styled.img `
