@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section() {
-    return (
-        <Wrap>
+function Section({title,description,leftBtnText,rightBtnText,backgroundImg }) {
+   
+    return ( 
+        <Wrap bgImage={backgroundImg}>
             <ItemText>
-                <h1>Model S</h1>
-                <p>Order Online for Touchless Delivery</p>
+                <h1> {title} </h1>
+                <p> {description}</p>
             </ItemText>
             <Buttons> {/**adding component */}
 
                 <ButtonGroup>
                     <LeftButton>
-                        Custom Order
+                       {leftBtnText}
                     </LeftButton>
 
                     <RightButton>
-                        Existing Inventory
+                         {rightBtnText}
                     </RightButton>
 
                 </ButtonGroup>
@@ -43,6 +44,7 @@ const Wrap = styled.div `
     flex-direction: column;
     justify-content: space-between; //vertical
     align-items: center; //horizontal
+    background-image: ${props => `url("images/${props.bgImage}") `}
 `
 
 /** Styling */
