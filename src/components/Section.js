@@ -39,7 +39,8 @@ export default Section
 
 
 /** Styling */
-const Wrap = styled.div `
+const Wrap = styled.div`
+    z-index:10;
     width:100vw;
     height: 100vh;
     background-size: cover;
