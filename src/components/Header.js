@@ -52,6 +52,7 @@ const Container = styled.div `
     top: 0;
     left:0;
     right:0;
+    z-index:1;
 `
 
 const Menu = styled.div`
@@ -70,7 +71,7 @@ const Menu = styled.div`
         display:none;
     }
 `
-
+ 
 const RightMenu = styled.div `
     
     display:flex;
@@ -93,6 +94,8 @@ const BurgerNav = styled.div`
     bottom:0;
     right:0;
     background:white;
-    z-index:100;
+    z-index:16;
+    width:300px;
+    list-style: none;
 
 `
