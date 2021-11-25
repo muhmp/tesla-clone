@@ -1,3 +1,12 @@
+Source:
+ReactJS Tutorial for Beginners - Full Course in 20 Hours [2022]
+
+Credit to:
+Clever Programmer (https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
