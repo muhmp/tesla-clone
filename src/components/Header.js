@@ -9,7 +9,6 @@ import {useSelector} from 'react-redux';
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const cars = useSelector(selectCars)
-    console.log(cars);
 
     return (
         <Container>
@@ -28,6 +27,7 @@ function Header() {
                 <a href="#">Tesla Account</a>
                 <CustomMenu onClick={()=>setBurgerStatus(true)}/>
             </RightMenu>
+
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper>
                     <CustomClose onClick={()=>setBurgerStatus(false)} />
@@ -37,7 +37,7 @@ function Header() {
                   <li key={index}><a href="#">{car}</a></li>
                 ))}
 
-                <li><a href="# "></a>Existing Inventory</li>
+                <li><a href="#"></a>Existing Inventory</li>
                 <li><a href="#"></a>Used Inventory</li>
                 <li><a href="#"></a>Traded-in</li>
                 <li><a href="#"></a>Cybertruck</li>
