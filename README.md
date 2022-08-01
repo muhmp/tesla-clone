@@ -1,3 +1,6 @@
+## Deployment:
+https://muhmp.github.io/tesla-clone/
+
 
 ## Credit & Source:
 project and tutorial references are from: Clever Programmer 
